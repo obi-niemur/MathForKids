@@ -1,0 +1,33 @@
+*{box-sizing: border-box;}
+
+#nav_sec{position: relative;}
+
+#nav_sec .logo{font-family: 'Mea Culpa', cursive; font-size: 50px;}
+#nav_sec .logo::after{
+    position: absolute;
+    content: '<-------------->';
+    top: 30px;
+    left: 0;
+    width: 100%;
+
+}
+#nav_sec .alll_Bs{    border: 1px solid gray;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 20px 20px 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 100%;
+    margin: 10px 10px 10px 10px;}
+
+
+    #question_sec{display: flex; position: relative; top: 30px; min-width: 350px;}
+    #add1{font-size: 30px; padding: 10px;}
+    #add2{font-size: 30px; padding: 10px;}
+    #result{font-size: 30px; padding: 10px;}
+
+
+   #option_sec{display: block; float: right; font-size: 70px;}
+
+
+
