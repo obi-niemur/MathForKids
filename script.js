@@ -22,23 +22,28 @@ function addingNum() {
   let num1;
   let num2;
   let result;
-  let opt, op2;
+  var switchAnswers = [];
 
   for (let i = 0; i <= 100; i++) {
     num1 = Math.round(Math.random(i) * 100);
     num2 = Math.round(Math.random(i) * 100);
-    opt = Math.round(Math.random(i) * 100);
-    op2 = Math.round(Math.random(i) * 100);
+   var opt = Math.round(Math.random(i) * 100);
+    var opt2_1 = Math.round(Math.random(i) * 100);
   }
 
   result = num1 + num2;
 
-  var allAns = [opt, opt2, result];
+  var allAns = [opt, opt2_1, result];
+
+  for (i = allAns.length; i--;){
+    switchAnswers.push(allAns.splice(Math.floor(Math.random() * (i + 1)), 1)[0]);
+  };
+
 
   a1.innerHTML = num1 + " + " + num2 + " = " + result;
-  opt.innerHTML = shuffleArray(allAns);
-  opt2.innerHTML = shuffleArray(allAns);
-  opt3.innerHTML = shuffleArray(allAns);
+  opt1.innerHTML = switchAnswers[0];
+  opt2.innerHTML = switchAnswers[1];
+  opt3.innerHTML = switchAnswers[2];
 }
 
   
@@ -59,13 +64,13 @@ function addingNum() {
 
 
 
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1), 1)[0];
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
+// function shuffleArray(array) {
+//     for (var i = array.length - 1; i > 0; i--) {
+//         var j = Math.floor(Math.random() * (i + 1));
+//         [array[i], array[j]] = [array[j], array[i]];
+//     }
+//     return array;
+// }
 
 // function cellClick(event){
 //     const divClick = event.target
