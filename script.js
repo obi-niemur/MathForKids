@@ -20,11 +20,13 @@ const a1 = document.getElementById("add1");
 //Adding event listener to options
 opt1.addEventListener("click", function(event){
   if(event.click === this.result){
-    prompt('correct ans')
+    console.log('correct ans')
     addingNum();
-  }else{
-    prompt('wrong')
+  }else if(event.click !== this.result){
+    console.log('not true')
   }
+    
+  return event
 
 });
 opt2.addEventListener("click", addingNum);
