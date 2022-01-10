@@ -78,7 +78,7 @@ function addingNum() {
     );
   }
 
-  a1.innerHTML = num1 + " + " + num2 + " = " + result;
+  a1.innerHTML = num1 + " + " + num2 + " = " + '?';
   opt1.innerHTML = switchAnswers[0];
   opt2.innerHTML = switchAnswers[1];
   opt3.innerHTML = switchAnswers[2];
