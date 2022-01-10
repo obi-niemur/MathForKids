@@ -90,41 +90,5 @@ function addingNum() {
   opt2.innerHTML = switchAnswers[1];
   opt3.innerHTML = switchAnswers[2];
 }
-<<<<<<< HEAD
 
-  // hei
-
-// function shuffleArray(array) {
-//   for (let i = array.length - 1; i > 0; i--) {
-//     
-//       var j = Math.floor(Math.random() * (i + 1));
-//       
-//       var temp = board[i][j];
-//       board[i][j] = board[j][j1];
-//       board[j][j1] = temp;
-//   }
-//   return array;
-// 
-// }
-
-
-
-
-// function shuffleArray(array) {
-//     for (var i = array.length - 1; i > 0; i--) {
-//         var j = Math.floor(Math.random() * (i + 1));
-//         [array[i], array[j]] = [array[j], array[i]];
-//     }
-//     return array;
-// }
-
-// function cellClick(event){
-//     const divClick = event.target
-//     if(divClick === Result){
-//         return addingNum()
-//     }else{
-//         alert('wrong')
-//     }
-// }
-=======
->>>>>>> test
+  
