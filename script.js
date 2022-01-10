@@ -1,4 +1,5 @@
 // Dom calling all the top nav math option
+const bodyc = document.querySelector('body')
 const add = document.getElementById("add");
 const subtract = document.getElementById("subtract");
 const multiply = document.getElementById("multiply");
@@ -19,18 +20,22 @@ const a1 = document.getElementById("add1");
 opt1.addEventListener("click", function () {
   if (opt1.innerHTML == result) {
     console.log("correct ans");
+    bodyc.style.backgroundColor = 'green';
     addingNum();
   } else {
     console.log("not true");
+    bodyc.style.backgroundColor = 'red';
   }
 });
 
 opt2.addEventListener("click", function () {
   if (opt2.innerHTML == result) {
     console.log("correct ans");
+    bodyc.style.backgroundColor = 'green';
     addingNum();
   } else {
     console.log("not true");
+    bodyc.style.backgroundColor = 'red';
   }
 
   
@@ -41,9 +46,11 @@ opt2.addEventListener("click", function () {
 opt3.addEventListener("click", function () {
   if (opt3.innerHTML == result) {
     console.log("correct ans");
+    bodyc.style.backgroundColor = 'green';
     addingNum();
   } else {
     console.log("not true");
+    bodyc.style.backgroundColor = 'red';
   }
 
 });
