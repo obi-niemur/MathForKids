@@ -20,17 +20,48 @@ const a1 = document.getElementById("add1");
 //Adding event listener to options
 opt1.addEventListener("click", function(event){
   if(event.click === this.result){
-    console.log('correct ans')
+    console.log('correct ans');
     addingNum();
-  }else if(event.click !== this.result){
+  }else {
     console.log('not true')
   }
     
-  return event
+  // return event
 
 });
-opt2.addEventListener("click", addingNum);
-opt3.addEventListener("click", addingNum);
+// opt1.addEventListener('click', addingNum);
+
+
+opt2.addEventListener("click", function(event){
+  if(event.click === this.result){
+    console.log('correct ans');
+    addingNum();
+  }else {
+
+    console.log('not true')
+
+  }
+  
+    
+  // return event
+
+});
+
+// opt2.addEventListener("click", addingNum);
+
+opt3.addEventListener("click", function(event){
+  if(event.click === this.result){
+    console.log('correct ans');
+    addingNum();
+  }else  {
+    console.log('not true')
+  }
+    
+  // return event
+
+});
+
+// opt3.addEventListener("click", addingNum);
 
 //Whenever user choose add it will call adding num function
 add.addEventListener("click", addingNum);
@@ -58,6 +89,8 @@ function addingNum() {
   for (i = allAns.length; i--;){
     switchAnswers.push(allAns.splice(Math.floor(Math.random() * (i + 1)), 1)[0]);
   };
+
+  
 
 
   a1.innerHTML = num1 + " + " + num2 + " = " + result;
