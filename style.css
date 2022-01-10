@@ -21,7 +21,8 @@
     margin: 10px 10px 10px 10px;}
 
 
-    #question_sec{display: flex; position: relative; top: 30px; min-width: 350px;}
+    #question_sec{display: flex; position: relative; top: 30px; min-width: 350px; cursor: pointer;}
+    #option1, #option2, #option3{cursor: pointer;}
     #add1{font-size: 30px; padding: 10px;}
     #add2{font-size: 30px; padding: 10px;}
     #result{font-size: 30px; padding: 10px;}
