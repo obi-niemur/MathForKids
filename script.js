@@ -13,49 +13,51 @@ const opt1 = document.getElementById("option1");
 const opt2 = document.getElementById("option2");
 const opt3 = document.getElementById("option3");
 
+
 // DOM calling the math question showing box
 const a1 = document.getElementById("add1");
 
-//Adding event listener to options
-opt1.addEventListener("click", function () {
-  if (opt1.innerHTML == result) {
-    console.log("correct ans");
-    bodyc.style.backgroundColor = 'green';
-    addingNum();
-  } else {
-    console.log("not true");
-    bodyc.style.backgroundColor = 'red';
-  }
-});
+let allOption=[opt1,opt2,opt3];
+var count=0;
 
-opt2.addEventListener("click", function () {
-  if (opt2.innerHTML == result) {
-    console.log("correct ans");
-    bodyc.style.backgroundColor = 'green';
-    addingNum();
-  } else {
-    console.log("not true");
-    bodyc.style.backgroundColor = 'red';
-  }
 
+
+
+allOption.forEach(i => {
+  var option = i;
+  option.addEventListener("click", function() {
+    // console.log(i)
+    if (i.innerHTML == result) {
+                console.log("correct ans");
+                console.log(count++);
+                // console.log(allOption[i])
+                bodyc.style.backgroundColor = 'green';
+                addingNum();
+              } else {
+                console.log("not true");
+                bodyc.style.backgroundColor = 'red';
+              }
+  })
   
-});
+})
 
 
 
-opt3.addEventListener("click", function () {
-  if (opt3.innerHTML == result) {
-    console.log("correct ans");
-    bodyc.style.backgroundColor = 'green';
-    addingNum();
-  } else {
-    console.log("not true");
-    bodyc.style.backgroundColor = 'red';
-  }
 
-});
+// for(let i = 0; i >= allOption.length; ++i){
+//   allOption[i].addEventListener('click',function(){
+//     if (allOption[i].innerHTML == result) {
+//           console.log("correct ans");
+//           console.log(allOption[i])
+//           bodyc.style.backgroundColor = 'green';
+//           addingNum();
+//         } else {
+//           console.log("not true");
+//           bodyc.style.backgroundColor = 'red';
+//         }
+//       });
 
-
+// }
 
 //Whenever user choose add it will call adding num function
 add.addEventListener("click", addingNum);
