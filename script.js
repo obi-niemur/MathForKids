@@ -20,9 +20,7 @@ const a1 = document.getElementById("add1");
 let allOption=[opt1,opt2,opt3];
 var count=0;
 
-
-
-
+// Loop for iterate through the Dom
 allOption.forEach(i => {
   var option = i;
   option.addEventListener("click", function() {
@@ -40,24 +38,6 @@ allOption.forEach(i => {
   })
   
 })
-
-
-
-
-// for(let i = 0; i >= allOption.length; ++i){
-//   allOption[i].addEventListener('click',function(){
-//     if (allOption[i].innerHTML == result) {
-//           console.log("correct ans");
-//           console.log(allOption[i])
-//           bodyc.style.backgroundColor = 'green';
-//           addingNum();
-//         } else {
-//           console.log("not true");
-//           bodyc.style.backgroundColor = 'red';
-//         }
-//       });
-
-// }
 
 //Whenever user choose add it will call adding num function
 add.addEventListener("click", addingNum);
