@@ -1,34 +1,103 @@
-*{box-sizing: border-box;}
-
-#nav_sec{position: relative;}
-
-#nav_sec .logo{font-family: 'Mea Culpa', cursive; font-size: 50px;}
-#nav_sec .logo::after{
-    position: absolute;
-    content: '<-------------->';
-    top: 30px;
-    left: 0;
-    width: 100%;
-
+* {
+  box-sizing: border-box;
 }
-#nav_sec .alll_Bs{    border: 1px solid gray;
-    font-family: 'Courier New', Courier, monospace;
+
+#nav_sec {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+}
+
+#nav_sec .logo {
+  font-family: "Mea Culpa", cursive;
+  font-size: 50px;
+  display: flex;
+  max-width: fit-content;
+}
+#nav_sec .logo::after {
+  position: absolute;
+  content: "<-------------->";
+  top: 30px;
+  left: 0;
+  width: 100%;
+}
+#nav_sec .alll_Bs {
+  /* border: 1px solid gray; */
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px 20px 20px 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100%;
+  margin: 10px 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+#question_sec {
+  display: flex;
+  position: relative;
+  top: 30px;
+  min-width: 350px;
+  cursor: pointer;
+}
+#option1,
+#option2,
+#option3 {
+  cursor: pointer;
+}
+#add1 {
+  font-size: 30px;
+  padding: 10px;
+}
+#add2 {
+  font-size: 30px;
+  padding: 10px;
+}
+#result {
+  font-size: 30px;
+  padding: 10px;
+}
+
+#option_sec {
+  display: block;
+  float: right;
+  font-size: 70px;
+}
+
+@media (max-width: 558px) {
+  /* #nav_sec {
+    display: block;
+  } */
+  #nav_sec .logo{
+    font-family: "Mea Culpa", cursive;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #nav_sec .alll_Bs {
+    /* border: 1px solid gray; */
+    font-family: "Courier New", Courier, monospace;
     padding: 20px 20px 20px 20px;
-    position: absolute;
-    right: 0;
-    top: 0;
     max-width: 100%;
-    margin: 10px 10px 10px 10px;}
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+  }
 
-
-    #question_sec{display: flex; position: relative; top: 30px; min-width: 350px; cursor: pointer;}
-    #option1, #option2, #option3{cursor: pointer;}
-    #add1{font-size: 30px; padding: 10px;}
-    #add2{font-size: 30px; padding: 10px;}
-    #result{font-size: 30px; padding: 10px;}
-
-
-   #option_sec{display: block; float: right; font-size: 70px;}
-
-
-
+  #nav_sec .alll_Bs button{
+      margin: 0 auto;
+  }
+}
