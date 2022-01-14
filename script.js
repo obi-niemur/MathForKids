@@ -33,6 +33,7 @@ allOption.forEach(i => {
                 addingNum();
               } else {
                 console.log("not true");
+                console.log(count--);
                 bodyc.style.backgroundColor = 'red';
               }
   })
