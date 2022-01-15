@@ -19,6 +19,8 @@ const opt3 = document.getElementById("option3");
 // DOM calling the math question showing box
 const a1 = document.getElementById("add1");
 
+
+
 let allOption=[opt1,opt2,opt3];
 var count=0;
 
@@ -42,7 +44,10 @@ allOption.forEach(i => {
 })
 
 //Whenever user choose add it will call adding num function
-add.addEventListener("click", addingNum);
+add.addEventListener("click", function(){
+  addingNum();
+  opt_sec.style.visibility='visible'
+});
 
 function addingNum() {
   let num1; //this will hold random number 1

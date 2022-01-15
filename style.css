@@ -36,6 +36,7 @@
   width: auto;
   justify-content: space-between;
   gap: 39px;
+
 }
 
 #question_sec {
@@ -73,6 +74,7 @@
   right: 0;
   left: 0;
   font-family: "Yanone Kaffeesatz", sans-serif;
+  visibility: hidden;
 }
 
 #option_sec::after {
