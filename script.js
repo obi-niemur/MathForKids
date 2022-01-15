@@ -16,10 +16,6 @@ const opt3 = document.getElementById("option3");
 
 
 
-
-
-
-
 // DOM calling the math question showing box
 const a1 = document.getElementById("add1");
 
