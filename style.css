@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 #nav_sec {
   position: relative;
   position: relative;
@@ -27,7 +26,6 @@
   width: 100%;
 }
 #nav_sec .alll_Bs {
-  /* border: 1px solid gray; */
   font-family: "Courier New", Courier, monospace;
   padding: 20px 20px 20px 20px;
   position: absolute;
@@ -44,7 +42,7 @@
   display: flex;
   position: relative;
   top: 30px;
-  min-width: 350px;
+  max-width: 350px;
   cursor: pointer;
 }
 #option1,
@@ -66,16 +64,24 @@
 }
 
 #option_sec {
-  display: block;
-  float: right;
   font-size: 70px;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+#option_sec::after {
+  position: absolute;
+  content: "";
+  border-bottom: 5px solid gray;
+  width: 100%;
+  right: 0;
+  border-radius: 50%;
 }
 
 @media (max-width: 558px) {
-  /* #nav_sec {
-    display: block;
-  } */
-  #nav_sec .logo{
+  #nav_sec .logo {
     font-family: "Mea Culpa", cursive;
     font-size: 50px;
     width: 100%;
@@ -85,7 +91,6 @@
   }
 
   #nav_sec .alll_Bs {
-    /* border: 1px solid gray; */
     font-family: "Courier New", Courier, monospace;
     padding: 20px 20px 20px 20px;
     max-width: 100%;
@@ -98,7 +103,50 @@
     margin: 0 auto;
   }
 
-  #nav_sec .alll_Bs button{
-      margin: 0 auto;
+  #nav_sec .alll_Bs button {
+    margin: 0 auto;
+  }
+
+  #option_sec {
+    font-size: 60px;
+    position: relative;
+    text-align: right;
+  }
+
+  #question_sec {
+    display: flex;
+    position: relative;
+    top: 14px;
+    max-width: 350px;
+    cursor: pointer;
+  }
+
+  #add1 {
+    font-size: 60px;
+  }
+
+ 
+
+  #option_sec::after {
+    position: absolute;
+    content: "";
+    border-bottom: 5px solid gray;
+    width: 100%;
+    right: 0;
+    border-radius: 50%;
   }
 }
+
+/* ans sections */
+/* 
+.hr_line {
+  position: relative;
+}
+
+.hr {
+  border-bottom: 1px gray solid;
+  position: absolute;
+  top: 277px;
+  bottom: -15px;
+  width: 100%;
+} */

@@ -14,6 +14,12 @@ const opt2 = document.getElementById("option2");
 const opt3 = document.getElementById("option3");
 
 
+
+
+
+
+
+
 // DOM calling the math question showing box
 const a1 = document.getElementById("add1");
 
@@ -39,6 +45,9 @@ allOption.forEach(i => {
   })
   
 })
+
+
+
 
 //Whenever user choose add it will call adding num function
 add.addEventListener("click", addingNum);
