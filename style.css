@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+
+
 #nav_sec {
   position: relative;
   position: relative;
@@ -30,13 +32,14 @@
   padding: 20px 20px 20px 20px;
   position: absolute;
   right: 0;
-  top: 0;
   max-width: 100%;
   margin: 10px 10px 10px 10px;
   display: flex;
-  flex-wrap: wrap;
   width: auto;
+  justify-content: space-between;
+  gap: 39px;
 }
+
 
 #question_sec {
   display: flex;
@@ -51,12 +54,14 @@
   cursor: pointer;
 }
 #add1 {
-  font-size: 30px;
+  font-size: 60px;
   padding: 10px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 #add2 {
-  font-size: 30px;
+  font-size: 60px;
   padding: 10px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 #result {
   font-size: 30px;
@@ -69,6 +74,7 @@
   position: absolute;
   right: 0;
   left: 0;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 #option_sec::after {
@@ -80,7 +86,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: 558px) {
+@media (max-width: 640px) {
   #nav_sec .logo {
     font-family: "Mea Culpa", cursive;
     font-size: 50px;
@@ -121,9 +127,10 @@
     cursor: pointer;
   }
 
-  #add1 {
+  #add1 #add2{
     font-size: 60px;
   }
+
 
  
 
