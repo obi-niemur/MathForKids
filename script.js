@@ -4,17 +4,17 @@ const add = document.getElementById("add");
 const subtract = document.getElementById("subtract");
 const multiply = document.getElementById("multiply");
 const divide = document.getElementById("divide");
+const result1 = document.querySelector('.r');
 
 let result; // result is global
+
+
 
 // DOM calling all the option
 const opt_sec = document.getElementById("option_sec");
 const opt1 = document.getElementById("option1");
 const opt2 = document.getElementById("option2");
 const opt3 = document.getElementById("option3");
-
-
-
 
 // DOM calling the math question showing box
 const a1 = document.getElementById("add1");
@@ -29,21 +29,17 @@ allOption.forEach(i => {
     // console.log(i)
     if (i.innerHTML == result) {
                 console.log("correct ans");
-                console.log(count++);
-                // console.log(allOption[i])
                 bodyc.style.backgroundColor = 'green';
                 addingNum();
+                result1.innerHTML=`GOOD JOB! your total point is = ${count++}`;
               } else {
                 console.log("not true");
-                console.log(count--);
                 bodyc.style.backgroundColor = 'red';
+                result1.innerHTML=`GOOD JOB! your total point is = ${count--}`;
               }
   })
   
 })
-
-
-
 
 //Whenever user choose add it will call adding num function
 add.addEventListener("click", addingNum);
@@ -63,6 +59,7 @@ function addingNum() {
   }
 
   result = num1 + num2;
+  
 
   var allAns = [opt, opt2_1, result];
 

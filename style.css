@@ -2,8 +2,6 @@
   box-sizing: border-box;
 }
 
-
-
 #nav_sec {
   position: relative;
   position: relative;
@@ -40,7 +38,6 @@
   gap: 39px;
 }
 
-
 #question_sec {
   display: flex;
   position: relative;
@@ -52,16 +49,17 @@
 #option2,
 #option3 {
   cursor: pointer;
+  padding-right: 11px;
 }
 #add1 {
   font-size: 60px;
   padding: 10px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 #add2 {
   font-size: 60px;
   padding: 10px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 #result {
   font-size: 30px;
@@ -74,7 +72,7 @@
   position: absolute;
   right: 0;
   left: 0;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 #option_sec::after {
@@ -85,6 +83,16 @@
   right: 0;
   border-radius: 50%;
 }
+
+#Sresult {
+  position: relative;
+  top: 233px;
+}
+
+.r{
+  position: absolute;
+}
+
 
 @media (max-width: 640px) {
   #nav_sec .logo {
@@ -109,6 +117,8 @@
     margin: 0 auto;
   }
 
+  
+
   #nav_sec .alll_Bs button {
     margin: 0 auto;
   }
@@ -127,12 +137,9 @@
     cursor: pointer;
   }
 
-  #add1 #add2{
+  #add1 #add2 {
     font-size: 60px;
   }
-
-
- 
 
   #option_sec::after {
     position: absolute;
@@ -141,6 +148,16 @@
     width: 100%;
     right: 0;
     border-radius: 50%;
+  }
+
+  .r {
+    position: absolute;
+    top: 9px;
+  }
+
+  #Sresult {
+    position: relative;
+    top: 0;
   }
 }
 
